@@ -53,7 +53,7 @@
 
 							<tr>
 								<td><a
-									href="movie?movieNo=<c:out value="${movieList.movieNo }"/>"><img
+									href="movie?movieNo=<c:out value="${movieList.movieNo }"/>"><img style="width:300px;height:420px"
 										src="<c:out value="${movieList.movieImage }"/>"></a></td>
 								<td>
 									<p>

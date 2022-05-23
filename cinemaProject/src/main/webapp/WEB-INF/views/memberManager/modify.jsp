@@ -46,6 +46,7 @@
 			<div class="panel-body">
 				<c:forEach var="member" items="${member }">
 					<form role="form" method="post" action="/memberManager/modify">
+						<input type="hidden" value="<c:out value="${member.memberNo }" />">
 						<div class="form-group">
 							<label>아이디</label>
 							<input class="form-control"

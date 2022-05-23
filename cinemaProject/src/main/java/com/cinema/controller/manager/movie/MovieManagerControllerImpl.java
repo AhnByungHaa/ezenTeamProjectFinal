@@ -77,7 +77,7 @@ public class MovieManagerControllerImpl implements MovieManagerController {
 	@PostMapping("/delete")
 	public String movieManagerDelete(@RequestParam("movieNo") long movieNo, @ModelAttribute("cri") Criteria cri,
 			RedirectAttributes rttr) {
-		boolean result = movieManagerService.movieDelete(movieNo);
+		boolean result = movieManagerService.movieManagerDelete(movieNo);
 		if (result == true) {
 			rttr.addFlashAttribute("result", "success");
 		} else

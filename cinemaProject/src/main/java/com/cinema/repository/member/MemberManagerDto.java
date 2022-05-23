@@ -24,7 +24,6 @@ public class MemberManagerDto {
 	private String memberAuthority;
 	private String memberPhone;
 	private String memberTell;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date createTime;
 	private Date updateTime;
 	private Date deleteTime;

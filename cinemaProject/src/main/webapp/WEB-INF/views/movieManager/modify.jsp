@@ -48,6 +48,7 @@
 			<div class="panel-body">
 				<c:forEach var="movie" items="${movie }">
 					<form role="form" method="post" action="/movieManager/modify">
+					<input type="hidden" name="movieNo" value="<c:out value="${movie.movieNo }"/>">
 						<div class="form-group">
 							<label>영화 이미지</label> <input class="form-control"
 								name="movieImage" value="<c:out value="${movie.movieImage }"/>">
